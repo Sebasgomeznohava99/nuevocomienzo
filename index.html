@@ -4,78 +4,181 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Nuevo Comienzo</title>
 </head>
+
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo-container">
-                <a href="./index.html">
-                    <p class="logo-name">Sebastian Gómez Nohavá</p>
-                    <img class="logo" src="./img/Photoroom-logo.png" alt="Logo de la página de Sebastian Gómez Nohavá y su curriculum">
-                </a>
-            </div>
-            <div class="lista-links-container">
-                <ul class="lista-links-navbar">
-                    <li class="links-navbar"><a href="index.html">Inicio</a></li>
-                    <li class="links-navbar"><a href="./pages/servicios.html">Servicios</a></li>
-                    <li class="links-navbar"><a href="./pages/productos.html">Productos</a></li>
-                    <li class="links-navbar"><a href="./pages/nosotros.html">Nosotros</a></li>
-                    <li class="links-navbar"><a href="./pages/contacto.html">Contacto</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
         </nav>
     </header>
-
     <main>
-        <section class="button-details-container">
-            <h2 class="details-heading">Sebastian Gómez Nohavá</h2>
-            <button class="button-details">
-                <a href="#container-details">¿What to expect?</a>
-            </button>
-        </section>
-        
-        <section class="biography">
-            <div class="biography-photo">
-                <img src="./img/biography.jpg" alt="Personal Photo Sebastian Gómez Nohavá" class="personal-photo">
+
+        <div class="banner-container">
+            <section class="button-details-container">
+                <h2 class="details-heading">Sebastian Gómez Nohavá</h2>
+                <button class="button-details">
+                    <a href="#container-details">¿What to expect?</a>
+                </button>
+            </section>
+        </div>
+
+        <div class="flex-main-aside">
+
+            <div class="contenido-main">
+                <section class="biography">
+                    <div class="biography-photo">
+                        <img src="./img/biography.jpg" alt="Personal Photo Sebastian Gómez Nohavá"
+                            class="personal-photo">
+                    </div>
+                    <div class="biography-text">
+                        <h3 class="biography-heading">Sebastian's History</h3>
+                        <p class="biography-information">My name is Sebastian Gomez Nohava. I was born on august 19 of
+                            1999 in
+                            Medellín, Colombia.
+                            My whole life is a continuos pursuit of new stages to increase my knowledge. Arts and math
+                            have been
+                            an important part of my life; I can remember be at high school and always looking for new
+                            environments where I can use both of them, and enhannce everyday.
+                            I just graduated from the ITM (Metropolitan Techological Institute) in Medellin, Colombia as
+                            a
+                            producer; but looking back in time, I have always been interested in how innovation and
+                            creations
+                            can help world to improve and change lifes. That's the reason why, at my 25 years old, I'm
+                            looking
+                            to start a new career in La Salle University to become a Software Engineer.
+                            Being part of the forefront in techological evolution, AI, and new options for the world is
+                            where I
+                            thrive and I always strive to be updated in all environments.
+                            This history continues...
+                        </p>
+                    </div>
+                </section>
+                <section class="details-container" id="container-details">
+                    <details class="details" name="details-information">
+                        <summary class="details-answer">
+                            Why should you go through this website?
+                        </summary>
+                        This is part of the initial portfolio I started to built a few week ago. Part of my plan is
+                        bring
+                        everything I can to the innovation, including myself and everything regarding my professional
+                        life.
+                    </details>
+                    <details class="details" name="details-information">
+                        <summary class="details-answer">
+                            Where this idea came from?
+                        </summary>
+                        I have been checking programming world since I started around January 2024. I was completely
+                        amused by
+                        how this world everyday is changing. Nowadays, being on the forefront of the technological
+                        innovation
+                        should be the dream for evertbody. Never have seen something like this, a website that walk you
+                        through
+                        someone's life as a curriculum and a portfolio together?
+                    </details>
+                    <details class="details" name="details-information">
+                        <summary class="details-answer">
+                            Why the tab name is "a new beginning?"
+                        </summary>
+                        I have been working on my programming since January 2024, but everytime I have to do something I
+                        was
+                        working to get it done and throw it away. So now, this is the new beginning where I am going to
+                        strive
+                        myself beyond the 100% to find my buzz.
+                    </details>
+                    <details class="details" name="details-information">
+                        <summary class="details-answer">
+                            Is programming what I've been waiting for?
+                        </summary>
+                        I wouldn't say that; programming is just a place or action where I thrive, for my passion, my
+                        faster
+                        learner skill, and last but not least, always knowledge hungry.
+                    </details>
+                </section>
             </div>
-            <div class="biography-text">
-                <h3 class="biography-heading">Sebastian's History</h3>
-                <p class="biography-information">My name is Sebastian Gomez Nohava. I was born on august 19 of 1999 in Medellín, Colombia.
-                    My whole life is a continuos pursuit of new stages to increase my knowledge. Arts and math have been an important part of my life; I can remember be at high school and always looking for new environments where I can use both of them, and enhannce everyday.
-                    I just graduated from the ITM (Metropolitan Techological Institute) in Medellin, Colombia as a producer; but looking back in time, I have always been interested in how innovation and creations can help world to improve and change lifes. That's the reason why, at my 25 years old, I'm looking to start a new career in La Salle University to become a Software Engineer.
-                    Being part of the forefront in techological evolution, AI, and new options for the world is where I thrive and I always strive to be updated in all environments.
-                    This history continues...
-                </p>
+            <section class="aside-container">
+                <aside>
+                    <h3 class="aside-heading">Gratitude</h3>
+                    <p class="aside-gratitude">In this website I want to show my completely gratitude to my family,
+                        friends,
+                        colleagues and mentors. Who are the boost to keep everyday my head up and keep working on me and
+                        enhancing each version of myself. Without you all I wouldn't have gotten the path for my life
+                        and
+                        could be lost.
+                        Thank you for cheering me up to be the best version of me. This is the end of the past, and the
+                        present start for a new beginning in my life.<br>
+                        Sandra P. Nohavá B. - Mother <br>
+                        Wilmar A. Gomez A. - Father <br>
+                        Cecilia A. Bravo - Grandma <br>
+                        Manuela Hoyos Parra - Couple <br>
+                        Nohava's family <br>
+                        CoderHouse
+                    </p>
+                </aside>
+            </section>
+
+        </div>
+        <section class="grid-container-principal">
+            <div><img src="./img/musica.jpg" alt="Vinyl disc" class="grid-img">
+                <p class="grid-description">Scratch</p>
             </div>
-        </section>
-        
-        <section class="details-container" id="container-details">
-            <details class="details" name = "details-information">
-                <summary class="details-answer">
-                    Why should you go through this website?
-                </summary>
-                This is part of the initial portfolio I started to built a few week ago. Part of my plan is bring everything I can to the innovation, including myself and everything regarding my professional life.
-            </details>
-            <details class="details" name = "details-information">
-                <summary class="details-answer">
-                    Where this idea came from?
-                </summary>
-                I have been checking programming world since I started around January 2024. I was completely amused by how this world everyday is changing. Nowadays, being on the forefront of the technological innovation should be the dream for evertbody. Never have seen something like this, a website that walk you through someone's life as a curriculum and a portfolio together? 
-            </details>
-            <details class="details" name = "details-information">
-                <summary class="details-answer">
-                    Why the tab name is "a new beginning?"
-                </summary>
-                I have been working on my programming since January 2024, but everytime I have to do something I was working to get it done and throw it away. So now, this is the new beginning where I am going to strive myself beyond the 100% to find my buzz.
-            </details>
-            <details class="details" name = "details-information">
-                <summary class="details-answer">
-                    Is programming what I've been waiting for?
-                </summary>
-                I wouldn't say that; programming is just a place or action where I thrive, for my passion, my faster learner skill, and last but not least, always knowledge hungry.
-            </details>
+            <div><img src="./img/medellin.jpg" alt="Culture palace Medellin" class="grid-img">
+                <p class="grid-description">Culture Palace</p>
+            </div>
+            <div><img src="./img/musica-1.jpg" alt="dj mixer" class="grid-img">
+                <p class="grid-description">Dee Jay</p>
+            </div>
+            <div><img src="./img/medellin-1.jpg" alt="Medellin panoramic photo" class="grid-img">
+                <p class="grid-description">Medellin City</p>
+            </div>
+            <div><img src="./img/musica-2.jpg" alt="Concert with people jumping" class="grid-img">
+                <p class="grid-description">Concert</p>
+            </div>
+            <div><img src="./img/medellin-2.jpg" alt="El Poblado Medellin neighborhood" class="grid-img">
+                <p class="grid-description">El Poblado</p>
+            </div>
         </section>
     </main>
 
@@ -97,6 +200,9 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
