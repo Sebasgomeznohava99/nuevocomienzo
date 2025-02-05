@@ -25,53 +25,30 @@ header {
     border-radius: 0px 0px 25px 25px;
 }
 
-.navbar .logo-container a {
-    display: flex;
-    flex-direction: row;
-    margin: 30px;
-    width: 500px;
-    height: 80px;
-    justify-content: space-around;
-    align-items: center;
-    text-decoration: none;
-    transition: all 0.8s ease-in-out;
+.navbar .container-fluid .navbar-brand {
+    font-size: 25px;
+    color: white;
 }
 
-.navbar .logo-container a:hover {
+
+.navbar .container-fluid .navbar-brand:hover {
     transform: scale(1.1);
+    padding-left: 15px;
 }
 
-.navbar .logo-container a .logo-name  {
-    color: #fff;
-    font-size: 30px;
+.navbar .container-fluid .navbar-brand .logo{
+width: 100px;
+height: 100px;
 }
 
-.navbar .logo-container a .logo{
-width: 150px;
-height: 150px;
+.navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+    color: white;
+    font-size: 20px;
 }
 
-.navbar .lista-links-container {
-    margin-left: 150px;
-}
-
-.navbar .lista-links-container .lista-links-navbar{
-    display: flex;
-    list-style: none;
-}
-
-.navbar .lista-links-container .lista-links-navbar .links-navbar a {
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    padding: 50px;
-    font-size: 30px;
-    transition: all 0.5S ease-in-out;
-}
-
-.navbar .lista-links-container .lista-links-navbar .links-navbar a:hover {
-    transform: scale(1.2);
-    color: #c7b50f;
+.navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
+    transform: scale(1.1);
+    color: #ffe60066;
 }
 
 /** --------- Flex Main ----------*/
@@ -141,6 +118,7 @@ main .button-details-container .button-details a:hover{
     width: 300px;
     height: 300px;
     margin-left: 20px;
+    margin-top: 50px;
 }
 
 .biography .biography-text {
