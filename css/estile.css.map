@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"estile.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/base/_generales.scss","../sass/base/_flex-main.scss","../sass/components/_header.scss"],"names":[],"mappings":"AAGA;AACA;EACI;EACA;EACA;;;AAGJ;AAEA;EACI;;;ACbJ;EACI;;AACA;EACI;;AAEJ;EACI;EACA;;;ACHR;EACI;EACA;EACA;;AACA;EACI;EACA;EACA;;AAEI;EACI;EACA;EACA;;AACA;EACI;EACA;;AAEJ;EACI;EACA;;;AAOpB;EACI;EACA;EACA;;AACA;EACI;EACA","file":"estile.css"}

@@ -1,0 +1,39 @@
+@use "../base/listas" as *;
+@use "sass:list";
+
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    .navbar {
+        background-color: list.nth($colores, 3);
+        display: flex;
+        border-radius: 0px 0px 25px 25px;
+        .container-fluid {
+            .navbar-brand {
+                font-size: 25px;
+                color: list.nth($colores, 2);
+                transition: all 0.5s ease-in-out;
+                &:hover{
+                    transform: scale(1.1);
+                    padding-left: 15px;
+                }
+                .logo{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
+
+.navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+    color: list.nth($colores, 2);
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+        color: list.nth($colores,4 )
+    }
+}

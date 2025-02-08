@@ -1,0 +1,10 @@
+.flex-main-aside {
+    display: flex;
+    .contenido-main {
+        flex: 2; 
+    }
+    .aside-container {
+        flex: 1;
+        padding: 15px;
+    }
+}

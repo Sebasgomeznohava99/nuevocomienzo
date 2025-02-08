@@ -1,0 +1,15 @@
+@use "./listas" as *;
+@use "sass:list"; 
+
+/* * ---------- Reset ----------*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* * ---------- Body ----------*/
+
+body{
+    background-color: list.nth($colores, 1)
+}
